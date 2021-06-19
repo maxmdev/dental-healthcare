@@ -1,0 +1,496 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+button {
+  border: 1px solid #0078ab;
+  padding: 6px 8px;
+  border-radius: 50%;
+  background: #0078aa;
+  font-size: 24px;
+  color: #fff;
+  margin-right: 2%;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #0078aa;
+  border: 1px solid #0078ab;
+}
+
+button.button_scroll {
+  text-align: center;
+  padding: 8px 16px;
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  right: 30px;
+}
+
+.content_wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Backgrounds */
+
+.header_content_wrapper {
+  background: url("../img/lady.jpg") center no-repeat;
+  background-size: cover;
+}
+
+section.services {
+  background: url("../img/services_bg.jpg");
+  background-size: cover;
+}
+
+section.offers {
+  background: url("../img/pricing_bg.jpg") center no-repeat;
+  background-size: contain;
+}
+
+/* Header Menu */
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+}
+
+.header_menu .header_navigation a {
+  color: #363636;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.header_menu a:hover {
+  color: #2377a2;
+}
+
+.header_menu img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.header_menu .header_navigation nav {
+  display: inline-block;
+
+}
+
+/* Header content*/
+.header_content {
+  padding: 15% 0;
+}
+
+.header_content h1 {
+  max-width: 50%;
+}
+
+.header_content p {
+  max-width: 35%;
+  color: #99a2a5;
+  font-size: 12px;
+}
+
+/* Sections */
+.section_heading {
+  text-align: center;
+  line-height: 10px;
+  padding-bottom: 30px;
+}
+
+section {
+  padding: 5% 0;
+}
+
+.description_container p.description_header {
+  font-weight: bold;
+}
+
+.description_container p.description_text {
+  font-size: 12px;
+  color: #363636;
+}
+
+.section_heading p.description_heading {
+  font-size: 12px;
+  color: #363636;
+  text-transform: uppercase;
+}
+
+/* Section ABOUT */
+
+section.about .about_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+section.about .image_container {
+  flex-basis: 50%;
+}
+
+section.about .image_container img {
+  max-width: 100%;
+}
+
+section.about .description_container {
+  max-width: 30%;
+  flex-basis: 50%;
+  margin-left: 40px;
+}
+
+section.about h2 {
+  line-height : 4px;
+}
+
+section.about .description_container p.description_heading {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-bottom: 10px;
+  color: #4778bc;
+  line-height : 6px;
+}
+
+section.about ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+section.about li p.description_header {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+section.about ul p.description_header:before {
+  position: relative;
+  content: "\27A9"; /* Arrow with transparent body is PRO */
+  font-family: FontAwesome, sans-serif;
+  font-weight: normal;
+  right: 5px;
+  color: #4778bc;
+}
+
+/* Section SERVICES */
+
+section.services .section_blocks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.service_block_wrapper {
+  background: #fff;
+  margin: 7px auto;
+  padding: 10px;
+  max-width: 30%;
+}
+
+.service_block_wrapper img {
+  max-width: 30%;
+  height: auto;
+}
+
+.service_block_wrapper .description_header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.service_block_wrapper .description_text {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Section OFFERS */
+
+section.offers .section_blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section.offers .offer_block_wrapper {
+  background: #6dc7e1;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  flex-basis: 33.3%;
+  margin: 30px 0;
+}
+
+section.offers .offer_block_wrapper:nth-child(2n) {
+  border: 1px solid #0078aa;
+  background: #fff;
+  color: #0078aa;
+  margin: 0;
+  padding: 50px 0;
+}
+
+.offer_block_wrapper .offer_header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.offer_block_wrapper .offer_price {
+  font-size: 36px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.offer_block_wrapper .offer_treatments {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.offer_block_wrapper ul.offer_list {
+  font-size: 11px;
+  list-style: none;
+  padding: 0;
+  line-height: 30px;
+}
+
+section.offers button {
+  background: #fff;
+  border: 1px solid #0078aa;
+  border-radius: 8px;
+  color: #0078aa;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 10px;
+}
+
+section.offers button:hover {
+  background: #0078aa;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Section CONTACT*/
+
+section.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
+section.contact .section_form_wrapper {
+  flex-basis: 50%;
+}
+
+section.contact .section_form_image {
+  flex-basis: 50%;
+  margin: -4px;
+}
+
+section.contact .section_form_image img {
+  max-width: 100%;
+}
+
+section.contact .section_heading, .section_form {
+  display: block;
+  text-align: left;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.section_form form input {
+  width: 90%;
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #eeeeee;
+  margin: 2px 0;
+  font-style: italic;
+  padding: 8px;
+}
+
+.section_form form button {
+  border: 1px solid #0078ab;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  background: #0078aa;
+  border-radius: 8px 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.section_form form button:hover {
+  background: #fff;
+  color: #0078aa;
+  cursor: pointer;
+}
+
+.section_form datalist {
+  border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: #363636;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer .content_wrapper {
+  padding: 3px;
+}
+
+@media (max-width: 767px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  button.button_scroll {
+    right: 10px;
+  }
+
+  section.offers button, section.contact button {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .header_menu {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_content p {
+    max-width: 45%;
+    font-size: 13px;
+  }
+
+  .header_menu .header_navigation a {
+    margin-left: 4px;
+    font-size: 13px;
+  }
+
+  .header_buttons {
+    margin: 10px 0;
+  }
+
+  .header_buttons button {
+    margin-right: 20px;
+  }
+
+  .section_heading p.description_heading {
+    font-size: 14px;
+  }
+
+  section.about .about_info {
+    flex-direction: column;
+  }
+
+  section.about .description_container {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .description_container p.description_text {
+    font-size: 13px;
+  }
+
+  section.services .section_blocks {
+    flex-direction: column;
+  }
+
+  .service_block_wrapper {
+    max-width: 90%;
+  }
+
+  .service_block_wrapper .description_text {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  section.offers .section_blocks {
+    flex-direction: column;
+  }
+
+  .offer_block_wrapper .offer_header {
+    font-size: 28px;
+  }
+
+  .offer_block_wrapper .offer_price {
+    font-size: 48px;
+  }
+
+  .offer_block_wrapper .offer_treatments {
+    font-size: 14px;
+  }
+
+  .offer_block_wrapper ul.offer_list {
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  section.contact {
+    flex-direction: column;
+  }
+
+  section.contact .section_form_wrapper {
+    flex-basis: 50%;
+  }
+  section.contact .section_form_image {
+    flex-basis: 50%;
+  }
+
+  section.contact .section_heading, .section_form {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .section_form form input {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  section.about .description_container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  section.about .description_container {
+    max-width: 30%;
+  }
+}
