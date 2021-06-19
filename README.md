@@ -5,4 +5,8 @@ Dental clinic web-site layout with sticky nav-bar
 1. HTML5
 2. CSS3
 
-![img.png](main.png)
+# Tablet & Desktop
+![Main](main.png)
+
+# Mobile
+![Main-Responsive](mobile.png)
